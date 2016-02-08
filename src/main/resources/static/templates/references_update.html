@@ -1,0 +1,22 @@
+	<div class="container-fluid">
+	  <div class="row">
+		<div class="col-md-2">
+		  <!--Sidebar content-->
+		</div>
+		<div class="col-md-10">
+		<!--Body content-->
+		<h2>Update: {{tableName}} </h2>
+		<h3>Id:{{updateReferenceId}}</h3>
+		<form novalidate class="simple-form">
+			Name: <input type="text" ng-model="updateReference.name" /><br />
+			Description: <input type="text" ng-model="updateReference.description" />
+			<input type="submit" ng-click="update(updateReference)" value="Save" />
+		</form>
+		</br>
+		<p>{{result}}</p>
+		<p>{{error}}<p>
+		<p>{{response}}<p>
+		</div>
+	  </div>
+	</div>
+
